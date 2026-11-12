@@ -74,7 +74,18 @@
 <div class="card">
   <h3>Latest News</h3>
   <div class="news-list">
-        <div class="news-item">
+    <div class="news-item">
+        <div class="news-date">2027</div>
+        <div class="news-text">
+        VID-DRIFT: Diffusion-Based Video Super-Resolution and Frame Interpolation Effects on Video Visual Question Answering accepted in WACV WVAQ Workshop
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">2026</div>
+      <div class="news-text">
+        Benchmarking Semi-Supervised Semantic Segmentation Models for Post-Hurricane Scenes Understanding accepted in DMLR Journal
+      </div>
+    </div>
     <div class="news-item">
       <div class="news-date">2026</div>
       <div class="news-text">
@@ -113,6 +124,60 @@
   <div class="card">
     <h2>Publications</h2>
     <div class="publications-list">
+          <div class="publication">
+            <div class="pub-title">
+                VID-DRIFT: Diffusion-Based Video Super-Resolution and Frame Interpolation Effects on Video Visual Question Answering
+            </div>
+            <div class="pub-authors">
+              <b>Joshua Krinsky</b>, Aparna Bharati
+            </div>
+            <div class="pub-venue">
+              Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) Workshops, 2027
+            </div>
+            <p><b>Abstract</b>
+              Video rarely reaches viewers in pristine form: it is downscaled, compressed, and stripped of frames as it is stored, streamed, and re-shared. 
+              To recover quality, degraded video is increasingly passed through diffusion-based video super-resolution (VSR) or frame interpolation before it is viewed. 
+              These restorers are optimized for perceptual quality, yet the perception–distortion tradeoff implies that better-looking output can contain plausible but wrong detail. 
+              Whether such restoration repairs or corrupts the facts a video conveys remains untested. 
+              We introduce VID-DRIFT, an evaluation that measures semantic, rather than perceptual, change by tracking how video-MLLM visual question answering (VQA) 
+              accuracy shifts under a realistic degrade --> restore pipeline. 
+              VID-DRIFT applies downscaling, JPEG, H.265, and frame-rate loss at graded severities, restores each degraded clip with diffusion-based VSR or frame interpolation, and evaluates four open-weight video-MLLMs on multiple-choice VQA over the clean, degraded, and restored versions. 
+              Restored accuracy declines with degradation severity for every model and restorer and remains below clean in nearly all conditions. Our Semantic Drift Score further shows that restoration often corrupts facts more frequently than it restores them (mean SDS restorer range: 0.52–0.60). 
+              Source code for VID-DRIFT generation and evaluation can be found at: <a href="https://github.com/SeeVi-Lab/VID-DRIFT">SeeVi-Lab/VID-DRIFT</a>.
+              
+            </p><br>
+          <div class="pub-links">
+            <a href="" target="_blank" rel="noopener">WACV</a>
+          </div>
+        </div>
+
+        <div class="publication">
+            <div class="pub-title">
+                Benchmarking Semi-Supervised Semantic Segmentation Models for Post-Hurricane Scenes Understanding
+            </div>
+            <div class="pub-authors">
+             Zesheng Liu, <b>Joshua Krinsky</b>, Duc Kien Tran, Maryam Rahnemoonfar
+            </div>
+            <div class="pub-venue">
+              Journal of Data-centric Machine Learning Research, 2026
+            </div>
+            <p><b>Abstract</b>
+              Obtaining pixel-level annotations for semantic segmentation is costly and labor-intensive, making semi-supervised learning a practical and scalable alternative for 
+              many real-world applications. Rigorous benchmarks are crucial for advancing semi-supervised segmentation with limited labels. However, most existing 
+              semi-supervised segmentation benchmarks focus on simple, idealized office-like scenes. In this paper, we present the first post-hurricane segmentation
+               benchmark that evaluates state-of-the-art semi-supervised semantic segmentation models on post-hurricane datasets that present significantly more
+                challenging conditions. Emergency services have begun leveraging computer vision deep learning models to support disaster relief. 
+                One key application is post-hurricane semantic segmentation, which helps responders allocate resources and navigate destroyed or flooded terrain. 
+                However, these models must perform reliably amid occlusions, debris, class imbalance, and noisy inputs, often with limited labeled data. 
+                We present a comprehensive evaluation of existing methods on disaster-related benchmarks, identify key limitations in their performance under these 
+                complex conditions, and highlight future research directions for building more robust and generalizable models tailored to post-hurricane 
+                scene understanding.
+            </p><br>
+          <div class="pub-links">
+            <a href="https://openreview.net/pdf?id=UkCi8XrKH7" target="_blank" rel="noopener">DMLR</a>
+          </div>
+        </div>
+
         <div class="publication">
           <div class="pub-title">
               StyleProtect: Safeguarding Artistic Identity in Finetuned Diffusion Models
@@ -201,6 +266,24 @@
   <div class="card">
     <h2>Code Projects</h2>
     <div class="projects-grid"></div>
+
+    <div class="project">
+    <h4>VID-Drift</h4>
+    <p>
+      
+    </p>
+    <div class="project-links">
+      <a href="https://github.com/SeeVi-Lab/VID-DRIFT" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <div class="project-tags">
+      <span class="tag">Frame Interpolation</span>
+      <span class="tag">Video Super-resolution</span>
+      <span class="tag">Semantic Change</span>
+      <span class="tag">Video Visual Question Answering</span>
+      <span class="tag">Video Understanding</span>
+    </div>
+  </div>
+
     <div class="project">
     <h4>Benchmarking Image Forensics</h4>
     <p>
